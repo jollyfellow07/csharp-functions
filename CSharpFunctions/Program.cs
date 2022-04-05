@@ -15,11 +15,26 @@ void stampaArray(int[] array)
     Console.Write("]");
 }
 
+//funzione al quadrato
+int funzioneAlQuadrato(int numero1)
+{
+    numero1 = numero1 * numero1;
+    return numero1;  
+}
 
 
 
 
 
 /****************PROGRAMMA PRINCIPALE*******************/
+/*dichiaro il mio array*/
 int[] arrayDiNumeri = { 2, 5, 6, 8, 9, 1 };
 stampaArray(arrayDiNumeri);
+
+
+//quadrato del mio numero
+int numero = 5;
+numero = funzioneAlQuadrato(numero);
+Console.WriteLine(numero);
+
+
