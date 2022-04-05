@@ -31,7 +31,6 @@ int[] arrayAlQuadrato(int[] array1)
     {
         copiaArray[i] = copiaArray[i] * copiaArray[i];
     }
-    stampaArray(copiaArray);
     return copiaArray;
 }
 
@@ -61,15 +60,23 @@ Console.WriteLine("\n\nil quadrato del mio numero è " + numero);
 
 //array di numeri di cui bisogna fare al quadrato
 Console.WriteLine("\nQuesto è il mio array elevato al quadrato: ");
-arrayAlQuadrato(arrayDiNumeri);
+int[] arrayDiNumeriAlQuadrato = arrayAlQuadrato(arrayDiNumeri);
+stampaArray(arrayDiNumeriAlQuadrato);
 
 //ristampo array originale
 Console.WriteLine("\n\nQuesto è il mio array originale: ");
 stampaArray(arrayDiNumeri);
 
-//somma di tutti i numeri
+//somma di tutti i numeri nel array originale
 int somma;
 somma = arraySommato(arrayDiNumeri);
-Console.WriteLine("\n\n La somma del mio array originale è " + somma);
+Console.WriteLine("\n\nLa somma del mio array originale è " + somma);
+
+//somma di numeri del array al quadrato
+int sommaAlQuadrato;
+sommaAlQuadrato = arraySommato(arrayDiNumeriAlQuadrato);
+Console.WriteLine("\nLa somma del mio array al quadrato è " + sommaAlQuadrato);
 
 Console.ReadKey();
+
+
