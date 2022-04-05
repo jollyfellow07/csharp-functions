@@ -65,16 +65,9 @@ int[] arrayDiNumeri = new int [int.Parse(Console.ReadLine())];
 //assegno gli elementi del mio array con una funzione
 valoriArray(arrayDiNumeri);
 
-//srampo il mio array
+//stampo il mio array
 Console.WriteLine("Questo è il mio array originale: ");
 stampaArray(arrayDiNumeri);
-
-
-//quadrato del mio numero
-Console.Write("\ninserisci un numero di cui vuoi effettuare il quadrato: ");
-int numero = int.Parse(Console.ReadLine());
-numero = funzioneAlQuadrato(numero);
-Console.WriteLine("\n\nil quadrato del mio numero è " + numero);
 
 //array di numeri di cui bisogna fare al quadrato
 Console.WriteLine("\nQuesto è il mio array elevato al quadrato: ");
@@ -95,4 +88,9 @@ int sommaAlQuadrato;
 sommaAlQuadrato = arraySommato(arrayDiNumeriAlQuadrato);
 Console.WriteLine("\nLa somma del mio array al quadrato è " + sommaAlQuadrato);
 
+//quadrato del mio numero
+Console.Write("\ninserisci un numero di cui vuoi effettuare il quadrato: ");
+int numero = int.Parse(Console.ReadLine());
+numero = funzioneAlQuadrato(numero);
+Console.WriteLine("\n\nil quadrato del mio numero è " + numero);
 Console.ReadKey();
